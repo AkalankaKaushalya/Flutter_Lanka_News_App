@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lanka_news_app/controller/home_controller.dart';
 import 'package:lanka_news_app/util/theme.dart';
-import 'package:lanka_news_app/util/toast.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
           onDestinationSelected: (int index) {
             setState(() {
               c.currentPageIndex = index;
-              showToast('${c.selectedIndex}');
+              //showToast('${c.selectedIndex}');
             });
           },
           indicatorColor: AppColors.primaryColor,
