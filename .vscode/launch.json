@@ -7,18 +7,18 @@
         
         
         {
-            "name": "lanka_news_app",
+            "name": "global_news_app",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "lanka_news_app (profile mode)",
+            "name": "global_news_app (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "lanka_news_app (release mode)",
+            "name": "global_news_app (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

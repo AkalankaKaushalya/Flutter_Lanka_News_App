@@ -1,4 +1,4 @@
 class Config {
   static String baseUrl = 'https://slforeignjobs.lk/api/api.php?';
-  static String token = 'e1d9668148b14535b1226493d98017d4';
+  static String token = 'db55fadb8f134820a66c35397197d16f';
 }

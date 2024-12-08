@@ -1,4 +1,4 @@
-import 'package:lanka_news_app/model/news_model.dart';
+import 'package:global_news_app/model/news_model.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 

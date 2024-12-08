@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/controller/home_controller.dart';
-import 'package:lanka_news_app/routers/router.dart';
-import 'package:lanka_news_app/views/item_category.dart';
-import 'package:lanka_news_app/views/item_news.dart';
+import 'package:global_news_app/controller/home_controller.dart';
+import 'package:global_news_app/routers/router.dart';
+import 'package:global_news_app/views/item_category.dart';
+import 'package:global_news_app/views/item_news.dart';
 
 class TabNews extends StatelessWidget {
   TabNews({Key? key}) : super(key: key);
@@ -13,7 +13,7 @@ class TabNews extends StatelessWidget {
     return GetBuilder<HomeController>(
       builder: (c) => Scaffold(
           appBar: AppBar(
-            title: const Text('Lanka News', textAlign: TextAlign.center),
+            title: const Text('Global News', textAlign: TextAlign.center),
             centerTitle: true,
             leading: IconButton(
               icon: const Icon(Icons.search),

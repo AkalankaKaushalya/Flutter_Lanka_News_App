@@ -1,9 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/model/category_model.dart';
-import 'package:lanka_news_app/model/news_model.dart';
-import 'package:lanka_news_app/util/config.dart';
+import 'package:global_news_app/model/category_model.dart';
+import 'package:global_news_app/model/news_model.dart';
+import 'package:global_news_app/util/config.dart';
 import 'package:http/http.dart' as http;
 
 class ViewNewsCategoryController extends GetxController {

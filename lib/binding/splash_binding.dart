@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:lanka_news_app/controller/splash_controller.dart';
+import 'package:global_news_app/controller/splash_controller.dart';
 
 class SplashBinding extends Bindings {
   @override

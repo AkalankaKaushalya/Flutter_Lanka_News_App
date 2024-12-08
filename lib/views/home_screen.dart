@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/controller/home_controller.dart';
-import 'package:lanka_news_app/util/theme.dart';
+import 'package:global_news_app/controller/home_controller.dart';
+import 'package:global_news_app/util/theme.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,27 +17,28 @@ class _HomeScreenState extends State<HomeScreen> {
       builder: (c) => Scaffold(
         backgroundColor: AppColors.backgroundLight,
         bottomNavigationBar: NavigationBar(
+          backgroundColor: const Color.fromARGB(255, 187, 252, 156),
           onDestinationSelected: (int index) {
             setState(() {
               c.currentPageIndex = index;
               //showToast('${c.selectedIndex}');
             });
           },
-          indicatorColor: AppColors.primaryColor,
+          indicatorColor: const Color.fromARGB(255, 102, 247, 45),
           selectedIndex: c.currentPageIndex,
           destinations: const <Widget>[
             NavigationDestination(
-              selectedIcon: Icon(Icons.home),
+              selectedIcon: Icon(Icons.newspaper_sharp),
               icon: Icon(Icons.home_outlined),
-              label: 'News',
+              label: 'Global News',
             ),
             NavigationDestination(
               icon: Icon(Icons.category_outlined),
-              label: 'Category',
+              label: 'Category News',
             ),
             NavigationDestination(
-              icon: Icon(Icons.favorite_border_outlined),
-              label: 'Favorite',
+              icon: Icon(Icons.read_more_sharp),
+              label: 'Reading List',
             ),
           ],
         ),

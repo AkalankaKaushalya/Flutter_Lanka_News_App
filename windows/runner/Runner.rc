@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "lanka_news_app" "\0"
+            VALUE "FileDescription", "global_news_app" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "lanka_news_app" "\0"
+            VALUE "InternalName", "global_news_app" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "lanka_news_app.exe" "\0"
-            VALUE "ProductName", "lanka_news_app" "\0"
+            VALUE "OriginalFilename", "global_news_app.exe" "\0"
+            VALUE "ProductName", "global_news_app" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

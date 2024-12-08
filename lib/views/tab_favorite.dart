@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/controller/home_controller.dart';
-import 'package:lanka_news_app/util/toast.dart';
-import 'package:lanka_news_app/views/item_news_fav.dart';
+import 'package:global_news_app/controller/home_controller.dart';
+import 'package:global_news_app/util/toast.dart';
+import 'package:global_news_app/views/item_news_fav.dart';
 
 class TabFavorite extends StatelessWidget {
   const TabFavorite({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class TabFavorite extends StatelessWidget {
     return GetBuilder<HomeController>(
       builder: (c) => Scaffold(
         appBar: AppBar(
-          title: const Text('My Favorite', textAlign: TextAlign.center),
+          title: const Text('Our Favorite', textAlign: TextAlign.center),
           centerTitle: true,
           leading: IconButton(
             icon: const Icon(Icons.settings),

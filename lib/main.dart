@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/routers/router.dart';
-import 'package:lanka_news_app/util/init.dart';
-import 'package:lanka_news_app/util/theme.dart';
-import 'package:lanka_news_app/util/translator.dart';
+import 'package:global_news_app/routers/router.dart';
+import 'package:global_news_app/util/init.dart';
+import 'package:global_news_app/util/theme.dart';
+import 'package:global_news_app/util/translator.dart';
 import 'package:device_preview/device_preview.dart';
 
 void main() async {

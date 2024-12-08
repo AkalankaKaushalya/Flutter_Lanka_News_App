@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lanka_news_app/controller/home_controller.dart';
+import 'package:global_news_app/controller/home_controller.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
 class ItemCategory extends StatelessWidget {
@@ -14,7 +14,9 @@ class ItemCategory extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
       padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 10),
       decoration: BoxDecoration(
-        color: c.selectedCategory == category ? Colors.blue : Colors.grey[300],
+        color: c.selectedCategory == category
+            ? const Color.fromARGB(255, 109, 238, 58)
+            : Colors.grey[300],
         borderRadius: BorderRadius.circular(10),
       ),
       child: Center(
@@ -32,7 +34,7 @@ class ItemCategory extends StatelessWidget {
             category.toUpperCase(),
             style: TextStyle(
                 color: c.selectedCategory == category
-                    ? Colors.white
+                    ? const Color.fromARGB(255, 14, 13, 13)
                     : Colors.black),
           ),
         ],

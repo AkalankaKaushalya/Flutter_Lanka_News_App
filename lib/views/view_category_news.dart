@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/controller/view_news_category_controller.dart';
-import 'package:lanka_news_app/model/category_model.dart';
-import 'package:lanka_news_app/views/item_news.dart';
+import 'package:global_news_app/controller/view_news_category_controller.dart';
+import 'package:global_news_app/model/category_model.dart';
+import 'package:global_news_app/views/item_news.dart';
 
 class ViewCategoryNews extends StatelessWidget {
   final Category? category;
@@ -24,7 +24,7 @@ class ViewCategoryNews extends StatelessWidget {
             appBar: AppBar(
               title: Text('${c.categoryItem!.name} News List'),
             ),
-            body: const Center(child: Text('No news data available')),
+            body: const Center(child: Text('No global news data available')),
           );
         }
 
@@ -34,7 +34,7 @@ class ViewCategoryNews extends StatelessWidget {
                 icon: const Icon(Icons.arrow_back),
                 onPressed: () => Get.back(),
               ),
-              title: Text('${c.categoryItem!.name} News List'),
+              title: Text('${c.categoryItem!.name} Full News List'),
               centerTitle: true,
             ),
             body: SafeArea(

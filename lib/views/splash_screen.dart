@@ -1,10 +1,10 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/controller/splash_controller.dart';
-import 'package:lanka_news_app/routers/router.dart';
-import 'package:lanka_news_app/util/theme.dart';
-import 'package:lanka_news_app/util/toast.dart';
+import 'package:global_news_app/controller/splash_controller.dart';
+import 'package:global_news_app/routers/router.dart';
+import 'package:global_news_app/util/theme.dart';
+import 'package:global_news_app/util/toast.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -56,7 +56,7 @@ class _SplashScreenState extends State<SplashScreen> {
                     height: 150,
                   ),
                   const Text(
-                    'Lanka News App',
+                    'Global App',
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                   ),
                 ],

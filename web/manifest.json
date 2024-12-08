@@ -1,6 +1,6 @@
 {
-    "name": "lanka_news_app",
-    "short_name": "lanka_news_app",
+    "name": "global_news_app",
+    "short_name": "global_news_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",

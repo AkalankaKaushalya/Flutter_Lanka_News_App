@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/controller/search_news_controller.dart';
-import 'package:lanka_news_app/views/item_news.dart';
+import 'package:global_news_app/controller/search_news_controller.dart';
+import 'package:global_news_app/views/item_news.dart';
 
 class SearchNewsScreen extends StatelessWidget {
   const SearchNewsScreen({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class SearchNewsScreen extends StatelessWidget {
           title: TextField(
             controller: controller.searchController,
             decoration: InputDecoration(
-              hintText: 'Search news...',
+              hintText: 'Search global news...',
               border: InputBorder.none,
               suffixIcon: IconButton(
                 icon: const Icon(Icons.search),
@@ -28,7 +28,7 @@ class SearchNewsScreen extends StatelessWidget {
             ? const Center(child: CircularProgressIndicator())
             : controller.searchResults.isEmpty
                 ? const Center(
-                    child: Text('No results found'),
+                    child: Text('No results news global found'),
                   )
                 : ListView.builder(
                     itemCount: controller.searchResults.length,

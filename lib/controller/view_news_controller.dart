@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:lanka_news_app/db_helper/sql_helper.dart';
-import 'package:lanka_news_app/model/news_model.dart';
+import 'package:global_news_app/db_helper/sql_helper.dart';
+import 'package:global_news_app/model/news_model.dart';
 
 class ViewNewsController extends GetxController {
   News? newsItem;

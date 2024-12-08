@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/model/news_model.dart';
-import 'package:lanka_news_app/controller/view_news_controller.dart';
-import 'package:lanka_news_app/util/helper.dart';
+import 'package:global_news_app/model/news_model.dart';
+import 'package:global_news_app/controller/view_news_controller.dart';
+import 'package:global_news_app/util/helper.dart';
 
 class ViewNews extends StatelessWidget {
   final News? news;
@@ -25,7 +25,7 @@ class ViewNews extends StatelessWidget {
             appBar: AppBar(
               title: const Text('News View'),
             ),
-            body: const Center(child: Text('No news data available')),
+            body: const Center(child: Text('No global news data available')),
           );
         }
 
@@ -35,7 +35,7 @@ class ViewNews extends StatelessWidget {
               icon: const Icon(Icons.arrow_back),
               onPressed: () => Get.back(),
             ),
-            title: const Text('View News'),
+            title: const Text('News Full'),
             centerTitle: true,
             actions: [
               IconButton(

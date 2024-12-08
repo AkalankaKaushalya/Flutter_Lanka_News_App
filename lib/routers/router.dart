@@ -1,14 +1,14 @@
 import 'package:get/get.dart';
-import 'package:lanka_news_app/binding/home_binding.dart';
-import 'package:lanka_news_app/binding/search_news_binding.dart';
-import 'package:lanka_news_app/binding/splash_binding.dart';
-import 'package:lanka_news_app/binding/view_news_binding.dart';
-import 'package:lanka_news_app/binding/view_news_category_binding.dart';
-import 'package:lanka_news_app/views/home_screen.dart';
-import 'package:lanka_news_app/views/search_news_screen.dart';
-import 'package:lanka_news_app/views/splash_screen.dart';
-import 'package:lanka_news_app/views/view_category_news.dart';
-import 'package:lanka_news_app/views/view_news.dart';
+import 'package:global_news_app/binding/home_binding.dart';
+import 'package:global_news_app/binding/search_news_binding.dart';
+import 'package:global_news_app/binding/splash_binding.dart';
+import 'package:global_news_app/binding/view_news_binding.dart';
+import 'package:global_news_app/binding/view_news_category_binding.dart';
+import 'package:global_news_app/views/home_screen.dart';
+import 'package:global_news_app/views/search_news_screen.dart';
+import 'package:global_news_app/views/splash_screen.dart';
+import 'package:global_news_app/views/view_category_news.dart';
+import 'package:global_news_app/views/view_news.dart';
 
 class AppRouter {
   static const String splash = '/splash';

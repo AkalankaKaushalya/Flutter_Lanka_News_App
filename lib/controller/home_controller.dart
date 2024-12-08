@@ -3,14 +3,14 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/db_helper/sql_helper.dart';
-import 'package:lanka_news_app/model/category_model.dart';
-import 'package:lanka_news_app/model/news_model.dart';
-import 'package:lanka_news_app/util/config.dart';
-import 'package:lanka_news_app/views/splash_screen.dart';
-import 'package:lanka_news_app/views/tab_category.dart';
-import 'package:lanka_news_app/views/tab_favorite.dart';
-import 'package:lanka_news_app/views/tab_news.dart';
+import 'package:global_news_app/db_helper/sql_helper.dart';
+import 'package:global_news_app/model/category_model.dart';
+import 'package:global_news_app/model/news_model.dart';
+import 'package:global_news_app/util/config.dart';
+import 'package:global_news_app/views/splash_screen.dart';
+import 'package:global_news_app/views/tab_category.dart';
+import 'package:global_news_app/views/tab_favorite.dart';
+import 'package:global_news_app/views/tab_news.dart';
 import 'package:http/http.dart' as http;
 
 class HomeController extends GetxController implements GetxService {
@@ -21,25 +21,25 @@ class HomeController extends GetxController implements GetxService {
   final List<Category> categories = [
     Category(
         name: "all",
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/9356/9356448.png"),
-    Category(
-        name: "business",
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/9356/9356507.png"),
-    Category(
-        name: "entertainment",
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/9356/9356578.png"),
+        iconUrl: "https://cdn-icons-png.flaticon.com/512/9464/9464164.png"),
     Category(
         name: "health",
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/9356/9356593.png"),
-    Category(
-        name: "science",
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/9356/9356621.png"),
-    Category(
-        name: "sports",
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/9356/9356642.png"),
+        iconUrl: "https://cdn-icons-png.flaticon.com/128/4807/4807695.png"),
     Category(
         name: "technology",
-        iconUrl: "https://cdn-icons-png.flaticon.com/128/9356/9356667.png"),
+        iconUrl: "https://cdn-icons-png.flaticon.com/128/2694/2694997.png"),
+    Category(
+        name: "business",
+        iconUrl: "https://cdn-icons-png.flaticon.com/128/7890/7890493.png"),
+    Category(
+        name: "entertainment",
+        iconUrl: "https://cdn-icons-png.flaticon.com/128/3364/3364355.png"),
+    Category(
+        name: "science",
+        iconUrl: "https://cdn-icons-png.flaticon.com/128/1028/1028468.png"),
+    Category(
+        name: "sports",
+        iconUrl: "https://cdn-icons-png.flaticon.com/128/4645/4645268.png"),
   ];
   String selectedCategory = 'all';
 

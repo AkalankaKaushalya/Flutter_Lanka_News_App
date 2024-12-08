@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lanka_news_app/model/news_model.dart';
-import 'package:lanka_news_app/routers/router.dart';
-import 'package:lanka_news_app/util/helper.dart';
+import 'package:global_news_app/model/news_model.dart';
+import 'package:global_news_app/routers/router.dart';
+import 'package:global_news_app/util/helper.dart';
 
 class ItemNews extends StatelessWidget {
   final News news;
