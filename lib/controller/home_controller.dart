@@ -7,6 +7,7 @@ import 'package:lanka_news_app/db_helper/sql_helper.dart';
 import 'package:lanka_news_app/model/category_model.dart';
 import 'package:lanka_news_app/model/news_model.dart';
 import 'package:lanka_news_app/util/config.dart';
+import 'package:lanka_news_app/views/splash_screen.dart';
 import 'package:lanka_news_app/views/tab_category.dart';
 import 'package:lanka_news_app/views/tab_favorite.dart';
 import 'package:lanka_news_app/views/tab_news.dart';
@@ -57,10 +58,13 @@ class HomeController extends GetxController implements GetxService {
   ScrollController scrollController = ScrollController();
   HomeController({required this.parser});
 
+  DateTime? _lastCheckTime;
+
   @override
   void onInit() {
     // TODO: implement onInit
     super.onInit();
+    checkNews();
     loadNews(selectedCategory);
     loadFavoriteNews();
     scrollController.addListener(() {
@@ -150,6 +154,46 @@ class HomeController extends GetxController implements GetxService {
       favoriteNews = <News>[];
     } finally {
       isLoadingFavoriteNews = false;
+      update();
+    }
+  }
+
+  Future<void> checkNews() async {
+    try {
+      // Prevent checking more than once every 5 minutes
+      if (_lastCheckTime != null &&
+          DateTime.now().difference(_lastCheckTime!) <
+              const Duration(minutes: 5)) {
+        return;
+      }
+      update();
+      String url = "https://slforeignjobs.lk/check.json";
+      final response = await http.get(Uri.parse(url));
+
+      if (response.statusCode == 200) {
+        _lastCheckTime = DateTime.now();
+        final data = json.decode(response.body);
+
+        if (data != null) {
+          switch (data["get_news"]) {
+            case "yes_news":
+              Get.offAll(() => const SplashScreen());
+              break;
+            case "no_news":
+              // Continue normally
+              break;
+            default:
+              log("Unexpected get_news value: ${data["get_news"]}");
+          }
+        } else {
+          log("Invalid response format - null data");
+        }
+      } else {
+        log("HTTP Error: ${response.statusCode}");
+      }
+    } catch (e) {
+      log("Error checking news: $e");
+    } finally {
       update();
     }
   }
